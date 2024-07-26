@@ -1,0 +1,19 @@
+class cal:
+    def f1(a,b):
+        print(a+b)
+    def f2(a,b):
+        print(a-b)
+    def f3(a,b):
+        print(a*b)
+    def f4(a,b):
+        print(a/b)
+a=int(input("emter a no:-"))
+b= int(input("enter a no:-"))
+t1=cal()
+cal.f1(a,b)
+cal.f2(a,b)
+cal.f3(a,b)
+cal.f4(a,b)
+
+
+

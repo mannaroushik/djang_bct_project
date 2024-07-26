@@ -1,0 +1,10 @@
+n = int(input("ENTER THE NUMBER LIST MEMBER = "))
+list1 = []
+list2 = []
+for i in range(n):
+    x = int(input("ENTER THE %d MEMBER - "%(i+1)))
+    list1.append(x)
+for i in range(n-1,-1,-1):
+    list2.append(list1[i])
+print(list1)
+print(list2)

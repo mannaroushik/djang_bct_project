@@ -1,0 +1,4 @@
+import cgpa
+n=8
+rex=cgpa.cgpa_cal(n)
+print(rex)

@@ -1,0 +1,16 @@
+a = int(input("ENTER FIRST NUMBER : - "))
+b = int(input("ENTER SECOND NUMBER :- "))
+while(1):
+    n = int(input("PRESS 1 FOR SUM\nPRESS 2 FOR SUB\nPRESS 3 FOR MUL\nPRESS 4 FOR DIV\nENTER YOUR CHOICE :- "))
+    if(n == 1):
+        print(a+b)
+    elif(n == 2):
+        print(a-b)
+    elif(n == 3):
+        print(a*b)
+    elif(n == 4):
+        print(a/b)
+    else:
+        print("wrong entry")
+        break
+        

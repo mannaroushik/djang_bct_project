@@ -1,0 +1,7 @@
+tup = ("apple","banana","cheery")
+list1 = list(tup)
+print(list1)
+x = input("enter :- ")
+list1.append(x)
+tup = tuple(list1)
+print(tup)

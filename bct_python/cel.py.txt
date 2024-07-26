@@ -1,0 +1,3 @@
+x = int(input("ENTER THE TEMP IN CELCIUS :- "))
+f = x*(9/5) + 32
+print("THE TEMP IN FERHENHITE :- ",f)

@@ -1,0 +1,5 @@
+x =  int(input("ENTER FIRST NUMBER :- "))
+y =  int(input("ENTER SECOND NUMBER :- "))
+res = x+y
+print(" THE SUM OD %d AND %d IS %d"%(x,y,res))
+print(" THE SUM OD {0} AND {1} IS {2}".format(x,y,res))

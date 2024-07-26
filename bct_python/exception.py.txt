@@ -1,0 +1,7 @@
+x = int(input("ENTER THE DIVIDEND :- "))
+y = int(input("ENTER THE DIVISOR :- "))
+try:
+    res = x/y
+    print("result :- ",res)
+except:
+    print("Exception occurs")

@@ -1,0 +1,16 @@
+try:
+    a=int(input("enter a no :- "))
+    if(a >0):
+        for i in range(2,a):
+            if( a%i==0):
+                print("the no is not prime")
+                break
+        else:
+            print("the no is prime")
+    else:
+        print(" wrong input plz try again with correct option")        
+except:
+    print(" wrong input plz try again with correct option")        
+    
+    
+ 

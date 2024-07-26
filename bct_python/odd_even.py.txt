@@ -1,0 +1,19 @@
+x = int(input("ENTER THE STARTING OF RANGE :- "))
+y = int(input("ENTER THE ENDING OF RANGE :- "))
+odd = 0
+even = 0
+list1 = []
+list2 = []
+for i in range(x,y+1):
+    if(i%2==0):
+        even = even + i
+        list1.append(i) 
+    else:
+        odd = odd + i
+        list2.append(i)
+print("THE SUM OF EVEN = ",even)
+print("THE SUM OF odd = ",odd)
+print("list of even = ",list1)
+print("list of odd = ",list2)
+
+

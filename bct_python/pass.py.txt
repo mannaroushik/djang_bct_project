@@ -1,0 +1,41 @@
+class AuthenticationSystem:
+    def _init_(self):
+        self.users = {}  
+
+    def register(self, username, password):
+        if username in self.users:
+            raise ValueError("Username already exists.")
+        self.users[username] = password
+        print(f"User '{username}' registered successfully.")
+        self.users[username] = password
+        print(f"User '{username}' registered successfully.")
+
+    def sign_in(self, username, password):
+        if username not in self.users:
+            raise ValueError("Username not found.")
+        if self.users[username] != password:
+            raise ValueError("Incorrect password.")
+        print(f"User '{username}' signed in successfully.")
+        return True
+
+# Example usage
+auth_system = AuthenticationSystem()
+try:
+    auth_system.register("alice", "password123")
+    auth_system.register("bob", "mypassword")
+except ValueError as e:
+    print(e)
+try:
+    auth_system.sign_in("alice", "password123")  
+    auth_system.sign_in("bob", "wrongpassword")  
+except ValueError as e:
+    print(e)
+try:
+    auth_system.register("alice", "newpassword")
+except ValueError as e:
+    print(e)
+try:
+    auth_system.sign_in("charlie", "password123")
+except ValueError as e:
+    print(e)
+

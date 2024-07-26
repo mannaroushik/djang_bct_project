@@ -1,0 +1,9 @@
+def cgpa_cal(n):
+    sum = 0.0
+    for i in range(0,n*2):
+        z= float(input("ENTER THE SGPA OF %d SEM :- "%(i+1)))
+        sum = sum+z
+    return sum/(n*2)
+# n = int(input("ENTER THE YEAR OF STUDENT :- "))
+# res = cgpa_cal(n)
+# print("THE CGPA = ",res)

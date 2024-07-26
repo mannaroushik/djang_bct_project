@@ -1,0 +1,4 @@
+x = int(input("ENTER THE AMT:- "))
+y = int(input("ENTER THE RATE OF INT :- "))
+z = int(input("ENTER THE TIME INTGERVAL :- "))
+print(x*y*z/100)

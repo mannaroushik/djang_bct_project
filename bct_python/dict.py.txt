@@ -1,0 +1,18 @@
+dict1 = {}
+keys = ['name','contact_no',"address"]
+while(1):
+    n = int(input("ENTER 1 TO ADD\nENTER 2 FOR display\nENTER 3 FOR CLOSE\nENTER YOUR CHOICE :- "))
+    if(n == 1):
+        n = input("ENTER THE NAME :- ")
+        dict1[keys[0]] = n
+        con = int(input("ENTER THE PH NUMBER :- "))
+        if(con>6000000000 and con<10000000000):
+            dict1[keys[1]] = con
+        else:
+            pass
+        add = input("ENTER THE ADDRESS :- ")
+        dict1[keys[2]] = add
+    elif(n == 2):
+        print(dict1)
+    elif(n == 3):
+        break

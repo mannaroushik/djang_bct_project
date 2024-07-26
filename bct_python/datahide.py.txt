@@ -1,0 +1,5 @@
+class test:
+    x=0
+    __h=20
+print(test.x)
+print(test.__h)    

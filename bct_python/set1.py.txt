@@ -1,0 +1,11 @@
+set1 = {"apple","guava","cherry","banana"}
+set2 = {"watermelon","apple","banana","lemon"}
+set5 = {"apple","banana"}
+set3 = set1.union(set2)
+set4 = set1.intersection(set2)
+print(set3)
+print(set4)
+if set1.issuperset(set5):
+    print("set1 is superset")
+if set5.issubset(set1):
+    print("set5 is subset")

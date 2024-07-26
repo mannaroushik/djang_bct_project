@@ -1,0 +1,13 @@
+n = int(input("ENTER THE NUMBER OF ROWS:- "))
+for i in range(0,n):
+    for j in range(0,i+1):
+        print("*",end = " ")
+    for k in range(3,2*(n-i)):
+        print(" ",end = " ")
+    if(j==n-1):
+        for l in range(0,i):
+            print("*",end = " ")
+    else:
+        for k in range(0,i+1):
+            print("*",end = " ")
+    print("\n")

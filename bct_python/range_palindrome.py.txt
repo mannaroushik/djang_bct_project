@@ -1,0 +1,22 @@
+def checkpalindrome(n):
+    n1 = n
+    sum = 0
+    while(n>0):
+        r = int(n%10)
+        sum = sum*10 + r
+        n = int(n/10)
+    if(sum==n1):
+        return 1
+    else:
+        return 0 
+x = int(input("ENTER THE STARTING OF RANGE :- "))
+y = int(input("ENTER THE ENDING OF RANGE :- "))
+list1 = []
+count = 0
+for i in range(x,y+1):
+    n = checkpalindrome(i)
+    if(n == 1):
+        list1.append(i)
+        count = count + 1
+print(list1)
+print("number of palindrome :- ",count)
