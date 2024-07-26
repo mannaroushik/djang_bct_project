@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <style>
+        body {
+    font-family: Helvetica,;
+    background-color: #242727;
+    background-image: url(https://i.kinja-img.com/image/upload/c_fill,h_900,q_60,w_1600/71bdcb8710a42b618c952accf1c97588.jpg);
+    background-position: 1ch;
+    background-size: 135ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background-color: rgba(10, 10, 10, 0.753);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(59, 49, 49, 0.1);
+    width: 300px;
+}
+.login-container h2 {
+    text-align: center;
+    color: #f8f40b;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(173, 245, 6);
+    border-radius: 3px;
+}
+
+button {
+  background-color: #007BFF; /* Background color */
+  color: #FFFFFF; /* Text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Space inside the button */
+  font-size: 16px; /* Text size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        {% if error %}
+            <p>{{ error }}</p>
+        {% endif %}
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="name" required>
+            <input type="password" name="password" placeholder="password" required>
+            <button type="submit">Log in</button>
+            <a href = "{% url 'signup'%}" class="href">
+                <button type="button">Signup</button>
+            </a>
+        </form>
+    </div>
+</body>
+</html>

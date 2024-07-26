@@ -1,0 +1,45 @@
+body {
+    font-family: Helvetica,;
+    background-color: #242727;
+    background-image: url(https://i.kinja-img.com/image/upload/c_fill,h_900,q_60,w_1600/71bdcb8710a42b618c952accf1c97588.jpg);
+    background-position: 1ch;
+    background-size: 135ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background-color: rgba(10, 10, 10, 0.753);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(59, 49, 49, 0.1);
+    width: 300px;
+}
+.login-container h2 {
+    text-align: center;
+    color: #f8f40b;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(173, 245, 6);
+    border-radius: 3px;
+}
+.login-container input[type="submit"] {
+    width: 100%;
+    background-color: #070707;
+    color: rgb(215, 250, 16);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.login-container input[type="submit"]:hover {
+    background-color: #f00640ec;
+}
